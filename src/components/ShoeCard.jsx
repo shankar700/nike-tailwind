@@ -5,7 +5,7 @@ const ShoeCard = ({imgURL , changeBigShoe, bigShoeImg }) => {
         }
     }
   return (
-    <div className={`border-2 rounded-xl ${bigShoeImg === imgURL.bigShoe? 'border-coral-red': 'border-transparent'} cursor-pointer max-sm:flex-1`}
+    <div className={`border-2 rounded-xl ${bigShoeImg === imgURL.bigShoe? 'border-coral-red': 'border-transparent'}  cursor-pointer max-sm:flex-1 hover:skew-y-6 hover:scale-105 hover:shadow-lg hover-shadow-coral-red duration-300`}
     onClick={handleClick}
     >
         <div className='flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4' >
